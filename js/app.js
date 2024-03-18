@@ -422,23 +422,6 @@
             }));
         }));
     }));
-    document.addEventListener("DOMContentLoaded", (function() {
-        const inputWrapper = document.querySelectorAll(".input-create-account__input-wrapper");
-        inputWrapper.forEach((element => {
-            element.addEventListener("click", (function(event) {
-                event.stopPropagation();
-                inputWrapper.forEach((e => {
-                    e.classList.remove("activeinput");
-                }));
-                this.classList.toggle("activeinput");
-            }));
-        }));
-        document.addEventListener("click", (function(event) {
-            if (!event.target.closest(".input-create-account__input-wrapper")) inputWrapper.forEach((element => {
-                element.classList.remove("activeinput");
-            }));
-        }));
-    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -1,0 +1,92 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+
+._icon-MagnifyingGlass:before {
+  content: "\e90f";
+  color: #fff;
+}
+._icon-ArrowRight:before {
+  content: "\e90e";
+}
+._icon-Globe:before {
+  content: "\e90c";
+}
+._icon-Eye:before {
+  content: "\e903";
+}
+._icon-heart:before {
+  content: "\e904";
+}
+._icon-human:before {
+  content: "\e905";
+}
+._icon-Instagram:before {
+  content: "\e906";
+}
+._icon-leaf:before {
+  content: "\e907";
+}
+._icon-location:before {
+  content: "\e908";
+}
+._icon-map:before {
+  content: "\e90a";
+}
+._icon-paper-plane:before {
+  content: "\e90d";
+}
+._icon-reverse_timer:before {
+  content: "\e910";
+}
+._icon-RocketLaunch:before {
+  content: "\e911";
+}
+._icon-send:before {
+  content: "\e912";
+}
+._icon-star:before {
+  content: "\e913";
+}
+._icon-ticket:before {
+  content: "\e915";
+}
+._icon-User:before {
+  content: "\e917";
+}
+._icon-YouTube:before {
+  content: "\e91a";
+}
+._icon-YoutubeLogo:before {
+  content: "\e91b";
+}
+._icon-Copy-icons:before {
+  content: "\e909";
+}
+._icon-Plus-icons:before {
+  content: "\e90b";
+}
+._icon-user-name:before {
+  content: "\e900";
+}
+._icon-LockKey:before {
+  content: "\e901";
+}
+._icon-sand-email:before {
+  content: "\e902";
+}

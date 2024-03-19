@@ -1,0 +1,193 @@
+//====================================================================================================
+
+
+////////////////////////////////////////////////
+
+
+
+.page-create-account {
+    background: var(--Background, #2B2B2B);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    // .page-create-account__top-img
+    &__top-img {}
+
+    // .page-create-account__contant
+    &__contant {
+        display: flex;
+        max-width: toRem(1280);
+        height: 100%;
+        gap: toRem(60);
+    }
+}
+
+.contant-account {
+
+    // .contant-account__img-account
+    &__img-account {
+        max-width: toRem(610);
+        object-fit: cover;
+        overflow: hidden;
+
+        @media (max-width:597px) {
+            overflow: hidden;
+            height: toRem(232);
+            max-width: toRem(800);
+        }
+
+        img {
+
+            //position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            object-fit: cover;
+
+            @media (max-width:597px) {
+                height: toRem(232);
+                max-width: toRem(800);
+            }
+        }
+    }
+
+    // .contant-account__text-account
+    &__text-account {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("padding-top", 100, 30, 0, 1280, 375);
+        @include adaptiveValue("padding-bottom", 100, 40, 0, 1280, 375);
+
+        @media (min-width:597px) {
+            padding-right: toRem(27.5);
+        }
+
+        @include adaptiveValue("max-width", 450, 334, 0, 1280, 991.98);
+    }
+}
+
+.text-account {
+    // .text-account__tytle
+    display: flex;
+    flex-direction: column;
+
+    &__tytle {
+        p:first-child {
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            text-transform: capitalize;
+            @include adaptiveValue("font-size", 51, 38, 0, 1280, 991.98);
+
+        }
+
+        p:nth-child(2) {
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            padding-top: toRem(20);
+            @include adaptiveValue("font-size", 22, 16, 0, 1280, 991.98);
+        }
+
+
+    }
+
+    // .text-account__button-Metamask
+
+    &__form-sign-up {
+        padding-top: toRem(40);
+        display: flex;
+        flex-direction: column;
+        gap: toRem(20);
+    }
+}
+
+.form-sign-up {
+
+    // .button-Metamask__text
+    &__text {}
+}
+
+.page-create-account__top-img {
+    @media (max-width:597px) {
+        height: toRem(232);
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.sign-up__input {}
+
+
+
+
+
+.text-account {
+
+    // .text-account__form-sign-up
+    &__form-sign-up {}
+}
+
+.sign-up {
+
+    // .sign-up__input
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(15);
+    }
+}
+
+.input-create-account {
+    @include adaptiveValue("width",330 ,315,0,1280,375);
+    // .input-create-account__input-wrapper
+    &__input-wrapper {
+        align-items: center;
+        display: flex;
+        border-radius: toRem(20);
+        gap: toRem(12);
+        background: #FFF;
+        padding-top: toRem(2);
+        padding-bottom: toRem(2);
+     
+        padding-left: toRem(20);
+        input{
+            height: toRem(42);
+            width: toRem(263);
+            background-color: #fff;
+            border-radius:  0 toRem(20)  toRem(20) 0;
+           box-shadow: inset 0px 0px 42px 4px #fff;
+            
+        }
+    }
+}
+._icon-user-name{
+    color: rgba(189, 189, 189, 1);
+}
+._icon-sand-email{
+    color: rgba(189, 189, 189, 1);   
+}
+._icon-LockKey{
+    color: rgba(189, 189, 189, 1);
+}
+.input-sign-up {}
+
+.button {}
+.input-sign-up:focus,
+.input-create-account__input-wrapper:focus-within {
+  outline: none;
+}
+.activeinput{
+    box-shadow: 0px 0px 5px 5px rgba(162, 89, 255, 0.7);
+}
+
+//====================================================================================================

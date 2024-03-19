@@ -1,0 +1,373 @@
+//====================================================================================================
+
+.page-ranketing {
+    background: var(--Background, #2B2B2B);
+
+    &__container {}
+}
+
+.container-ranketing {
+
+    &__title {
+        @include adaptiveValue("padding-top", 80, 30, 0, 1280, 375);
+        @include adaptiveValue("padding-bottom", 80, 30, 0, 1280, 375);
+
+        p:nth-child(1) {
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+
+            @include adaptiveValue("font-size", 51, 28, 0, 1280, 375);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            text-transform: capitalize;
+        }
+
+        p:nth-child(2) {
+            @include adaptiveValue("padding-top", 20, 10, 0, 1280, 375);
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            @include adaptiveValue("font-size", 22, 16, 0, 1280, 375);
+        }
+    }
+}
+
+.tabs-nav {
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: toRem(1050);
+        margin: 0 auto;
+        flex: 0 1 25%;
+    }
+
+    &__content {
+        border-bottom: 3px solid #2B2B2B;
+        padding-bottom: toRem(55);
+        background: var(--Background---Secondary, #3B3B3B);
+
+    }
+
+    &__title {
+        height: toRem(50);
+        width: 25%;
+        color: var(--caption-label-text, #858584);
+        text-align: center;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+        @include adaptiveValue("font-size", 22, 16, 0, 1280, 375);
+
+        p:nth-child(1) {
+            @media (max-width:$mobile) {
+                display: none;
+            }
+        }
+
+        p:nth-child(2) {
+            @media (min-width:$mobile) {
+                display: none;
+            }
+        }
+    }
+
+    ._tab-active {
+        position: relative;
+
+
+        color: #FFF;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 4px;
+            width: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #858584;
+            animation: line-tabs 0.3s ease 0.15s forwards;
+        }
+
+        @keyframes line-tabs {
+            0% {
+                width: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            100% {
+                width: 100%;
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+
+
+
+
+    }
+
+}
+
+
+
+
+
+._tab-active {}
+
+
+.tabs-ranketing-body {
+
+    &__body {}
+}
+
+
+
+
+.tabs-ranketing-body {
+
+    &__body {}
+}
+
+.tab-page {
+
+    &__box {
+        padding-bottom: toRem(60);
+    }
+}
+
+.menu-tabs {
+    &__box {}
+
+    &__card {}
+
+}
+
+.box-sort-ranking {
+
+    margin-top: toRem(40);
+
+    border-radius: 20px;
+    border: 1px solid var(--Background---Secondary, #3B3B3B);
+    height: toRem(46);
+    align-items: center;
+    @include adaptiveValue("padding-left", 20, 10, 0, 1280, 375);
+
+    &__sort {
+        display: flex;
+    }
+}
+
+.tab-ranking-card {
+    @include adaptiveValue("padding-left", 20, 10, 0, 1280, 375);
+    align-items: center;
+    position: relative;
+    margin-top: toRem(20);
+    display: flex;
+
+    width: 100%;
+    border-radius: 20px;
+    background: var(--Background---Secondary, #3B3B3B);
+    max-height: 100%;
+
+
+
+
+    &__name {}
+
+    &__text {}
+}
+
+.avtor-ranking {
+
+    &__img {
+        position: relative;
+        display: flex;
+
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+        width: toRem(60);
+        height: toRem(60);
+        @include adaptiveValue("width", 60, 24, 0, 1280, 375);
+        @include adaptiveValue("height", 60, 24, 0, 1280, 375);
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            @include adaptiveValue("width", 60, 24, 0, 1280, 375);
+            @include adaptiveValue("height", 60, 24, 0, 1280, 375);
+
+        }
+
+    }
+}
+
+
+.tab-page {
+
+    &__container {}
+}
+
+.menu-tabs {
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        display: flex;
+        padding-top: toRem(12);
+        padding-bottom: toRem(12);
+        justify-content: space-between;
+    }
+}
+
+.box-sort-ranking {
+
+    &__artist {
+        @include adaptiveValue("width", 380, 150, 0, 1280, 375);
+
+        p:first-child {
+            display: flex;
+            width: toRem(30);
+            justify-content: center;
+        }
+        color: var(--caption-label-text, #858584);
+           
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        @include adaptiveValue("font-size", 16, 12, 0, 1280, 375);
+        display: flex;
+        align-items: center;
+         @include adaptiveValue("gap", 20, 0, 0, 1280, 375);
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: toRem(400);
+
+        p {
+            color: var(--caption-label-text, #858584);
+           
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            @include adaptiveValue("font-size", 16, 12, 0, 1280, 375);
+          
+           
+            @include adaptiveValue("width",160 ,100,0,834,622 );
+        }
+
+        p:nth-child(3) {
+            width: toRem(100);
+            @media (max-width:616px){
+                width: toRem(80);
+          }
+        }
+
+        @include adaptiveValue("padding-right", 20, 10, 0, 1280, 375);
+    }
+}
+
+.tab-ranking-card {
+
+    &__artist {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 20, 0, 0, 1280, 375);
+        @include adaptiveValue("width", 380, 150, 0, 1280, 375);
+    }
+
+    &__number {
+        border-radius: 50%;
+        background: var(--Background, #2B2B2B);
+        min-width: toRem(30);
+        height: toRem(30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--caption-label-text, #858584);
+        @media (max-width:767.98px){
+            background: var(--Background---Secondary, #3B3B3B);
+        }
+    }
+
+    &__avtor {
+        @include adaptiveValue("gap", 20, 12, 0, 1280, 764);
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+
+        p {
+            @include adaptiveValue("font-size", 22, 16, 0, 1280, 375);
+        }
+
+        text-transform: capitalize;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: toRem(400);
+        @include adaptiveValue("padding-right", 20, 10, 0, 1280, 375);
+        
+        p {
+            color: var(--Text, #FFF);
+            @include adaptiveValue("width",160 ,100,0,834,622 );
+            font-family: Space Mono;
+            @include adaptiveValue("font-size", 16, 12, 0, 1280, 375);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        p:nth-child(1) {
+            color: var(--Green, #00AC4F);
+        }
+        p:nth-child(3) {
+            width: toRem(100);
+            @media (max-width:616px){
+                width: toRem(80);
+          }
+        }
+    }
+}
+
+.avtor-ranking {
+
+    &__img {}
+}
+
+.sort-none__first{
+    @media (max-width:767.98px){
+          display: none;
+    }
+}
+.sort-none__two{
+    @media (max-width:539px){
+          display: none;
+    }
+}
+
+//====================================================================================================

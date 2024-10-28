@@ -130,21 +130,22 @@
 
     // .tabs__body
     &__body {}
+
     ._tab-active {
         position: relative;
-    
+
         div:nth-child(1) {
             p {
                 color: #FFF;
             }
         }
-    
+
         div:nth-child(2) {
             background: #858584;
         }
-    
-    
-    
+
+
+
         &::after {
             content: "";
             position: absolute;
@@ -154,24 +155,24 @@
             background-color: #858584;
             animation: line-tabs 0.3s ease 0.15s forwards;
         }
-    
+
         @keyframes line-tabs {
             0% {
                 width: 0%;
-    
+
             }
-    
+
             100% {
                 width: 100%;
-    
+
             }
-    
-    
+
+
         }
-    
-    
-    
-    
+
+
+
+
     }
 }
 
@@ -230,7 +231,7 @@
         }
     }
 
-    
+
 
 }
 

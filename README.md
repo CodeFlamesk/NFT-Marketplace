@@ -7,19 +7,17 @@ A web layout for an NFT marketplace, featuring interactive elements.
 
 **What I did:**
 - Developed the layout using HTML and SCSS
-- Implemented tab switching functionality
+- Added functionality for switching between tabs.
 - Created a countdown timer
-- Built a burger menu for mobile navigation
+- Built a burger menu for easy navigation on mobile devices
 
 **Technologies:** HTML, SCSS, JavaScript
 
 ## Approaches & Methodologies
-
-- **Responsive Design** – Ensuring proper display on various devices.
-- **Pixel Perfect** – Precise alignment with the design.
-- **Semantic HTML** – Improved SEO and accessibility.
-- **Clean Code** – Well-structured and organized code.
-
+- **Responsive Design** – Ensuring the layout adapts seamlessly to different devices.
+- **Pixel Perfect** – Aligning elements with pixel-perfect precision to match the design.
+- **Semantic HTML** – Enhancing SEO and accessibility through meaningful markup.
+- **Clean Code** – Writing well-structured, easy-to-maintain code.
 ## Project Goals
 
 This project was created for my practice in HTML, SCSS, and JavaScript.
